@@ -1,6 +1,6 @@
 # OlayinkaCodes Portfolio
 
-Personal portfolio for Olayinka Akanji — AI Engineer / Software Engineer.
+Personal portfolio for Olayinka Akanji — Software Engineer.
 
 ## Stack
 
@@ -20,12 +20,13 @@ Open http://localhost:3000.
 
 ## Content to fill in
 
-A few spots are intentionally left as placeholders until real content/numbers exist — search `lib/data.ts` for bracketed text like `[Retrieval framework]`:
+A few spots are intentionally left as placeholders until real content exists — search `lib/data.ts` for bracketed text like `[Bullets pending ...]`:
 
-- **RAG Chatbot** project card — description, tech stack, links, and real achievement numbers.
-- **HTTP Server from Scratch** — GitHub link and load-test latency/throughput numbers once benchmarked.
+- **Experience → Nithub internship** — needs 2-3 concrete bullets on what was actually built/worked on there and the stack used.
+- **Leadership → both ETS UNILAG roles** (Technical Writing Team Lead; Deputy Programs and Community Engagement Coordinator) — need real bullets on what each involved/produced.
+- **Ultra-Fast KV Cache** project card — real throughput/latency numbers once benchmarked. Do not publish invented numbers.
+- **HTTP Server from Scratch** project card — real load-test numbers (via `oha`) once run. Do not publish invented numbers.
 - **`public/resume.pdf`** — replace the placeholder file with the real resume PDF (same filename, so the "Resume" links keep working).
-- **`lib/data.ts` → `contact`** — confirm the LinkedIn URL and email are correct.
 
 ## Structure
 
