@@ -5,7 +5,9 @@ import BootSequence from "@/components/BootSequence";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Achievements from "@/components/Achievements";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Leadership from "@/components/Leadership";
 import ResumeCTA from "@/components/ResumeCTA";
@@ -30,7 +32,9 @@ export default function Home() {
         <main>
           <Hero />
           <About />
+          <Achievements />
           <Skills />
+          <Experience />
           <Projects />
           <Leadership />
           <ResumeCTA />

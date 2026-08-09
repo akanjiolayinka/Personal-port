@@ -25,6 +25,22 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
+            href={contact.leetcode}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline font-sans text-sm text-muted transition-colors hover:text-teal"
+          >
+            LeetCode
+          </a>
+          <a
+            href={contact.hackerrank}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline font-sans text-sm text-muted transition-colors hover:text-teal"
+          >
+            HackerRank
+          </a>
+          <a
             href={`mailto:${contact.email}`}
             className="link-underline font-sans text-sm text-muted transition-colors hover:text-teal"
           >

@@ -18,15 +18,6 @@ export default function Projects() {
               <ProjectCard project={project} />
             </RevealOnScroll>
           ))}
-
-          <RevealOnScroll delay={projects.length * 0.06}>
-            <div className="flex h-full min-h-[220px] flex-col items-center justify-center rounded border border-dashed border-hairline p-7 text-center">
-              <p className="font-mono text-sm text-muted">more in progress</p>
-              <p className="mt-2 max-w-xs font-sans text-xs text-muted/70">
-                Additional project slots open here as they ship.
-              </p>
-            </div>
-          </RevealOnScroll>
         </div>
       </div>
     </section>
