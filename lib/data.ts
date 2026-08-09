@@ -142,11 +142,11 @@ export const contact = {
 export const leadership = [
   {
     org: "Technical Writing Team Lead — ETS UNILAG",
-    role: "[Bullet pending — what the team produced.]",
+    role: "Led the technical writing team at the Educational Technology Summit, UNILAG, writing articles that broke down complex tech topics into something readers could actually grasp.",
   },
   {
-    org: "Deputy Programs and Community Engagement Coordinator — ETS UNILAG",
-    role: "[Bullet pending — what this role involved.]",
+    org: "Deputy Programs and Community Engagement Coordinator — SDA UNILAG",
+    role: "Organized 6+ events and helped lead a 280+ member community, driving engagement and advocacy around SDA's sustainable development goals.",
   },
 ];
 

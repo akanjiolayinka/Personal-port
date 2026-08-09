@@ -23,7 +23,6 @@ Open http://localhost:3000.
 A few spots are intentionally left as placeholders until real content exists — search `lib/data.ts` for bracketed text like `[Bullets pending ...]`:
 
 - **Experience → Nithub internship** — needs 2-3 concrete bullets on what was actually built/worked on there and the stack used.
-- **Leadership → both ETS UNILAG roles** (Technical Writing Team Lead; Deputy Programs and Community Engagement Coordinator) — need real bullets on what each involved/produced.
 - **Ultra-Fast KV Cache** project card — real throughput/latency numbers once benchmarked. Do not publish invented numbers.
 - **HTTP Server from Scratch** project card — real load-test numbers (via `oha`) once run. Do not publish invented numbers.
 - **`public/resume.pdf`** — replace the placeholder file with the real resume PDF (same filename, so the "Resume" links keep working).
