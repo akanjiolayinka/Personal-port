@@ -63,11 +63,11 @@ export const projects: Project[] = [
     name: "Ultra-Fast KV Cache",
     description:
       "A sharded in-memory key-value store in Go, built from scratch.",
-    tech: ["Go", "djb2 hashing", "TCP tuning", "Docker"],
+    tech: ["Go", "fasthttp", "djb2 hashing", "TCP tuning", "Docker"],
     github: "https://github.com/akanjiolayinka/Ultrafast-kv",
     bullets: [
-      "Distributes keys across shards using djb2 hashing, entries pre-allocated per shard to avoid GC pauses under load.",
-      "Kernel-level TCP tuning for zero-allocation request handling; containerized with support for 1M+ file descriptors.",
+      "Distributes keys across shards using djb2 hashing, with 700K entries pre-allocated per shard to eliminate GC pauses under load.",
+      "Kernel-level TCP tuning and fasthttp for zero-allocation request handling; containerized with support for 1M+ file descriptors.",
       "[Placeholder until benchmarked — throughput/latency numbers pending real load testing.]",
     ],
   },
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     bullets: [
       "Skipped the standard library entirely to actually understand what it abstracts away — parsing, routing, and connection handling all written from zero.",
       "Built gzip compression and keep-alive connections in from the start, not bolted on after.",
-      "[Placeholder until load-tested with oha — repo flags this as future work, numbers pending.]",
+      "Benchmarked with oha at 200 concurrent clients: 19,350 req/s, 100% success rate, p50 4.4ms / p99 18.2ms latency across 10,000 requests.",
     ],
   },
   {
@@ -146,7 +146,7 @@ export const leadership = [
   },
   {
     org: "Deputy Programs and Community Engagement Coordinator — SDA UNILAG",
-    role: "Organized 6+ events and helped lead a 280+ member community, driving engagement and advocacy around SDA's sustainable development goals.",
+    role: "Organized 7+ events and helped lead a 280+ member community, driving engagement and advocacy around SDA's sustainable development goals.",
   },
 ];
 
@@ -157,11 +157,12 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   { value: "300+", label: "LeetCode problems solved" },
+  { value: "180+", label: "HackerRank problems solved" },
   {
     value: "Top 9",
     label: "Cavista Hackathon finalist (400+ participants, 40+ teams)",
   },
-  { value: "4.20/5.0", label: "CGPA, B.Sc. Computer Engineering, UNILAG" },
+  { value: "18min → 4min", label: "CI/CD deploy time cut at Nithub" },
 ];
 
 export interface ExperienceEntry {
@@ -175,9 +176,13 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Software Engineering Intern",
     org: "Nithub, University of Lagos",
-    period: "Started March 2026",
+    period: "Mar 2025 – Present",
     bullets: [
-      "[Bullets pending — need 2-3 concrete things worked on and the stack used.]",
+      "Built and deployed backend services in Go and Python, contributing to caching and asynchronous-processing improvements that reduced API response latency.",
+      "Designed and implemented RESTful API endpoints for a service handling a high volume of daily requests.",
+      "Optimized database queries through indexing, elimination of N+1 query patterns, and connection pooling.",
+      "Set up CI/CD pipelines with GitHub Actions, cutting deployment time from ~18 minutes to under 4.",
+      "Introduced Redis caching to cut repeated database reads, and wrote unit/integration tests to reduce regressions.",
     ],
   },
 ];
