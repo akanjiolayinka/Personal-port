@@ -18,6 +18,18 @@ function ExternalLinkIcon() {
 
 export default function ProjectCard({ project }: { project: Project }) {
   const isFlagship = project.status === "flagship";
+  const isOpenSlot = project.status === "open-slot";
+
+  if (isOpenSlot) {
+    return (
+      <div className="flex h-full min-h-[220px] flex-col items-center justify-center rounded border border-dashed border-hairline p-7 text-center">
+        <p className="font-mono text-sm text-muted">{project.name}</p>
+        <p className="mt-2 max-w-xs font-sans text-xs text-muted/70">
+          {project.description}
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div

@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.4, delay: 0.05 }}
           className="mb-5 font-mono text-xs uppercase tracking-[0.2em] text-teal"
         >
-          AI Engineer / Software Engineer
+          Software Engineer
         </motion.p>
 
         <motion.h1
@@ -37,9 +37,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.12 }}
           className="max-w-4xl font-mono text-4xl font-medium leading-[1.15] tracking-tight text-ink sm:text-5xl md:text-6xl"
         >
-          AI systems. Backend infrastructure.
-          <br />
-          Built from scratch.
+          Backend systems, built from scratch.
         </motion.h1>
 
         <motion.p
@@ -48,9 +46,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-6 max-w-xl font-sans text-base text-muted sm:text-lg"
         >
-          3+ years turning ideas into things that actually run — AI agents,
-          retrieval systems, and infrastructure written from the ground up,
-          not stitched together from someone else&apos;s framework.
+          3+ years of experience — I build the systems other engineers
+          import, and wire AI in where it actually earns its place.
         </motion.p>
 
         <motion.div

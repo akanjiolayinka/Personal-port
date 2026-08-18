@@ -10,19 +10,42 @@ export default function About() {
           </h2>
         </RevealOnScroll>
 
-        <RevealOnScroll delay={0.08}>
-          <p className="mt-8 max-w-3xl font-sans text-lg leading-relaxed text-ink/90 sm:text-xl">
-            I&apos;m an AI engineer with 3+ years building systems that run in
-            production, not just in demos. I studied Computer Engineering at
-            the University of Lagos, but most of what I actually know came
-            from taking things apart and rebuilding them myself — writing an
-            HTTP server without touching Go&apos;s standard library, wiring a
-            WhatsApp sales agent that handles real conversations for real
-            merchants, building retrieval systems that answer questions
-            instead of guessing. I care more about how a system behaves under
-            real use than how it looks in a demo.
-          </p>
-        </RevealOnScroll>
+        <div className="mt-8 max-w-3xl space-y-6 font-sans text-base leading-relaxed text-ink/90 sm:text-lg">
+          <RevealOnScroll>
+            <p>
+              I&apos;m a backend engineer building scalable APIs and systems
+              in Go and Python — FastAPI on the API side, Go when I want to
+              know exactly what&apos;s happening under the hood.
+            </p>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay={0.06}>
+            <p>
+              At Nithub, I cut CI/CD deploy time from 18 minutes to under 4,
+              introduced Redis caching to cut repeated database reads, and
+              optimized queries that were quietly killing response times. On
+              my own, I&apos;ve built an HTTP server with no net/http that
+              holds 19,350 req/s at 100% success under load, and a sharded
+              in-memory cache built from scratch in Go.
+            </p>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay={0.1}>
+            <p>
+              Competitive problem-solving keeps me sharp — 300+ problems
+              solved on LeetCode, 180+ on HackerRank, and a Top 9 finish at
+              the Cavista Hackathon out of 400+ participants.
+            </p>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay={0.14}>
+            <p>
+              I do AI engineering too — RAG pipelines, agentic systems — but
+              backend is where I live. If you&apos;re hiring for software
+              engineering roles, let&apos;s talk.
+            </p>
+          </RevealOnScroll>
+        </div>
       </div>
     </section>
   );

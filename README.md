@@ -1,6 +1,6 @@
 # OlayinkaCodes Portfolio
 
-Personal portfolio for Olayinka Akanji — AI Engineer / Software Engineer.
+Personal portfolio for Olayinka Akanji — Software Engineer.
 
 ## Stack
 
@@ -20,12 +20,13 @@ Open http://localhost:3000.
 
 ## Content to fill in
 
-A few spots are intentionally left as placeholders until real content/numbers exist — search `lib/data.ts` for bracketed text like `[Retrieval framework]`:
+A few spots are intentionally left as placeholders until real content exists — search `lib/data.ts` for bracketed text like `[Placeholder ...]`:
 
-- **RAG Chatbot** project card — description, tech stack, links, and real achievement numbers.
-- **HTTP Server from Scratch** — GitHub link and load-test latency/throughput numbers once benchmarked.
-- **`public/resume.pdf`** — replace the placeholder file with the real resume PDF (same filename, so the "Resume" links keep working).
-- **`lib/data.ts` → `contact`** — confirm the LinkedIn URL and email are correct.
+- **Ultra-Fast KV Cache** project card — real throughput/latency numbers once benchmarked. Do not publish invented numbers.
+- **Leadership → Technical Writing Team Lead (ETS UNILAG)** — needs a bullet on what the team actually produced.
+- **ResumeXpert project** — not yet on the site. Needs a repo link, live link (if any), and a one-line description before it can get a project card (`lib/data.ts` → `projects`).
+- **VendorMind screenshot** — once available, add it to the VendorMind project card with descriptive alt text (per the SEO spec, not `image1.png`-style alt text).
+- **`public/resume.pdf`** — generated from the provided resume docx via a headless-Chromium print-to-PDF (LibreOffice's document loader was broken in this environment, even on trivial files, so docx→PDF conversion went through browser print instead). Content matches the docx; replace with a fresh export if the source resume changes.
 
 ## Structure
 
